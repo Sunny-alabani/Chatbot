@@ -1,0 +1,23 @@
+    <div class="container" *ngIf ="!content">
+        <div class="title">WELCOME TO</div>
+        <div class="logo">MicroGrid</div>
+        <div class="subtitle">
+            A technology company at the intersection of <span class="subtitle-sub"> Digital Health and Conversational Intelligence</span>
+        </div>
+        <div class="bot-image">
+            <img src="assets/images/chaticon-mg.gif" alt="Chatbot">
+        </div>
+        <div class="question">Tell me, how can I help you?</div>
+        <div class="button">
+            <button (click)="open()">LET'S STARTED</button>     
+        <div class="terms">
+            <a href="#">View Terms of Service & Privacy Policy</a>
+        </div>
+        </div>
+    </div>
+    <div *ngIf="content">
+        <app-chathistory></app-chathistory>
+    </div>
+    
+
+
